@@ -1,0 +1,1554 @@
+{
+ "generated": "2026-11-13T20:54:15.163690+00:00",
+ "threshold": 75,
+ "universe_top": 30,
+ "signals": [
+  {
+   "symbol": "BTC-SWAP-USDT",
+   "price": 68934.6,
+   "direction": "NEUTRAL",
+   "score": 38,
+   "notify": false,
+   "score_long": 33,
+   "score_short": 38,
+   "brick_size": 20.29285714285652,
+   "bricks": 2297,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 6,
+     "short": 12,
+     "max": 20,
+     "run": 4,
+     "consistency": 0.4,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 14,
+     "short": 11,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.369,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 3,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 71/D 79), LTF reversal age 3"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "ETH-SWAP-USDT",
+   "price": 1949.43,
+   "direction": "NEUTRAL",
+   "score": 41,
+   "notify": false,
+   "score_long": 41,
+   "score_short": 36,
+   "brick_size": 0.8582142857142766,
+   "bricks": 1869,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 6,
+     "short": 6,
+     "max": 30,
+     "phase": "B",
+     "notes": [
+      "range 1944.71-1955.01 (12.0 bricks, 2L/2H touches)",
+      "no spring/UTAD in window"
+     ]
+    },
+    "B_renko": {
+     "long": 6,
+     "short": 9,
+     "max": 20,
+     "run": 3,
+     "consistency": 0.3,
+     "speed": 0.75
+    },
+    "C_tape": {
+     "long": 16,
+     "short": 6,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.426,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 3,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 80/D 86), LTF reversal age 3"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "SOL-SWAP-USDT",
+   "price": 80.1,
+   "direction": "NEUTRAL",
+   "score": 37,
+   "notify": false,
+   "score_long": 33,
+   "score_short": 37,
+   "brick_size": 0.04000000000000016,
+   "bricks": 1709,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 7,
+     "short": 13,
+     "max": 20,
+     "run": 4,
+     "consistency": 0.5,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 13,
+     "short": 11,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.461,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 13,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 2,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 69/D 72), LTF reversal age 2"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "NVDA-SWAP-USDT",
+   "price": 163.1,
+   "direction": "NEUTRAL",
+   "score": 35,
+   "notify": false,
+   "score_long": 35,
+   "score_short": 28,
+   "brick_size": 0.12000000000000048,
+   "bricks": 1290,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 10,
+     "short": 9,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.8,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 17,
+     "short": 6,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.43,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 13,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 4,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 72/D 84), LTF reversal age 4"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "SOXL-SWAP-USDT",
+   "price": 58.97,
+   "direction": "SHORT",
+   "score": 45,
+   "notify": false,
+   "score_long": 31,
+   "score_short": 45,
+   "brick_size": 0.1374999999999993,
+   "bricks": 1179,
+   "entry": 58.84999999999957,
+   "stop": 59.2375,
+   "t1": 58.46249999999914,
+   "t2": 58.07499999999871,
+   "rr": 1.0,
+   "stretch_target": 57.051041666666194,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 15,
+     "max": 30,
+     "phase": "C",
+     "notes": [
+      "range 57.6125-58.3 (5.0 bricks, 2L/2H touches)",
+      "utad depth 6.9 brick, vol 0.85x avg, re-entry 0 bricks, test pending"
+     ]
+    },
+    "B_renko": {
+     "long": 5,
+     "short": 8,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.7,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 18,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.657,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 13,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 2,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 80/D 86), LTF reversal age 2"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "XAU-SWAP-USDT",
+   "price": 3884.38,
+   "direction": "LONG",
+   "score": 45,
+   "notify": false,
+   "score_long": 45,
+   "score_short": 22,
+   "brick_size": 0.5767857142857338,
+   "bricks": 1865,
+   "entry": 3884.0750000001453,
+   "stop": 3880.863214285714,
+   "t1": 3887.2867857145766,
+   "t2": 3890.498571429008,
+   "rr": 1.0,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 17,
+     "short": 5,
+     "max": 20,
+     "run": 6,
+     "consistency": 0.8,
+     "speed": 0.75
+    },
+    "C_tape": {
+     "long": 15,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.591,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 8,
+     "max": 25,
+     "htf": "bull",
+     "reversal_age": 4,
+     "trigger": null,
+     "notes": [
+      "HTF bull (K 18/D 15), LTF reversal age 4"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "XRP-SWAP-USDT",
+   "price": 1.0239,
+   "direction": "NEUTRAL",
+   "score": 34,
+   "notify": false,
+   "score_long": 32,
+   "score_short": 34,
+   "brick_size": 0.0004964285714285564,
+   "bricks": 1858,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 7,
+     "short": 5,
+     "max": 20,
+     "run": 2,
+     "consistency": 0.5,
+     "speed": 0.667
+    },
+    "C_tape": {
+     "long": 12,
+     "short": 14,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.368,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 3,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 72/D 81), LTF reversal age 3"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "QQQ-SWAP-USDT",
+   "price": 681.74,
+   "direction": "SHORT",
+   "score": 40,
+   "notify": false,
+   "score_long": 31,
+   "score_short": 40,
+   "brick_size": 0.20607142857143199,
+   "bricks": 997,
+   "entry": 681.2721428571526,
+   "stop": 682.5360714285715,
+   "t1": 680.0082142857337,
+   "t2": 678.7442857143149,
+   "rr": 1.0,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 4,
+     "short": 16,
+     "max": 20,
+     "run": 6,
+     "consistency": 0.6,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 19,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.72,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 1,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 78/D 86), LTF reversal age 1"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "SNDK-SWAP-USDT",
+   "price": 886.33,
+   "direction": "SHORT",
+   "score": 47,
+   "notify": false,
+   "score_long": 29,
+   "score_short": 47,
+   "brick_size": 1.0453571428571504,
+   "bricks": 1049,
+   "entry": 884.3721428571496,
+   "stop": 888.5535714285782,
+   "t1": 880.190714285721,
+   "t2": 876.0092857142924,
+   "rr": 1.0,
+   "stretch_target": 872.1066190476258,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 13,
+     "max": 30,
+     "phase": "C",
+     "notes": [
+      "range 876.009-880.191 (4.0 bricks, 3L/3H touches)",
+      "utad depth 9.7 brick, vol 2.59x avg, re-entry 0 bricks, test pending"
+     ]
+    },
+    "B_renko": {
+     "long": 3,
+     "short": 14,
+     "max": 20,
+     "run": 5,
+     "consistency": 0.5,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 18,
+     "short": 7,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.576,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 13,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 4,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 87/D 89), LTF reversal age 4"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "BNB-SWAP-USDT",
+   "price": 638.77,
+   "direction": "NEUTRAL",
+   "score": 31,
+   "notify": false,
+   "score_long": 31,
+   "score_short": 29,
+   "brick_size": 0.18857142857142353,
+   "bricks": 2253,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 6,
+     "short": 9,
+     "max": 20,
+     "run": 3,
+     "consistency": 0.4,
+     "speed": 0.75
+    },
+    "C_tape": {
+     "long": 17,
+     "short": 5,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.5,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 0,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 86/D 89), LTF reversal age 0"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "SPCX-SWAP-USDT",
+   "price": 140.21,
+   "direction": "NEUTRAL",
+   "score": 32,
+   "notify": false,
+   "score_long": 28,
+   "score_short": 32,
+   "brick_size": 0.07250000000000309,
+   "bricks": 1235,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 5,
+     "short": 8,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.6,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 15,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.509,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 1,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 78/D 87), LTF reversal age 1"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "XAG-SWAP-USDT",
+   "price": 48.96,
+   "direction": "NEUTRAL",
+   "score": 36,
+   "notify": false,
+   "score_long": 31,
+   "score_short": 36,
+   "brick_size": 0.019285714285714,
+   "bricks": 1312,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 7,
+     "short": 12,
+     "max": 20,
+     "run": 3,
+     "consistency": 0.5,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 11,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.559,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 15,
+     "max": 25,
+     "htf": "bull",
+     "reversal_age": 4,
+     "trigger": null,
+     "notes": [
+      "HTF bull (K 19/D 18), LTF reversal age 4"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "DOGE-SWAP-USDT",
+   "price": 0.06541,
+   "direction": "LONG",
+   "score": 37,
+   "notify": false,
+   "score_long": 37,
+   "score_short": 26,
+   "brick_size": 3.107142857142842e-05,
+   "bricks": 1775,
+   "entry": 0.06540535714285642,
+   "stop": 0.06534892857142857,
+   "t1": 0.06546178571428427,
+   "t2": 0.06551821428571211,
+   "rr": 1.0,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 7,
+     "short": 5,
+     "max": 20,
+     "run": 2,
+     "consistency": 0.5,
+     "speed": 0.667
+    },
+    "C_tape": {
+     "long": 17,
+     "short": 6,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.556,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 3,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 76/D 84), LTF reversal age 3"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "XBR-SWAP-USDT",
+   "price": 93.36,
+   "direction": "NEUTRAL",
+   "score": 36,
+   "notify": false,
+   "score_long": 33,
+   "score_short": 36,
+   "brick_size": 0.019999999999999574,
+   "bricks": 2817,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 8,
+     "short": 14,
+     "max": 20,
+     "run": 4,
+     "consistency": 0.6,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 17,
+     "short": 7,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.6,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 15,
+     "max": 25,
+     "htf": "bull",
+     "reversal_age": 1,
+     "trigger": null,
+     "notes": [
+      "HTF bull (K 71/D 62), LTF reversal age 1"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "AKE-SWAP-USDT",
+   "price": 0.012159,
+   "direction": "NEUTRAL",
+   "score": 32,
+   "notify": false,
+   "score_long": 32,
+   "score_short": 27,
+   "brick_size": 7.703571428571431e-05,
+   "bricks": 1320,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 8,
+     "short": 6,
+     "max": 20,
+     "run": 2,
+     "consistency": 0.6,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 9,
+     "short": 13,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.59,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 15,
+     "short": 8,
+     "max": 25,
+     "htf": "bull",
+     "reversal_age": 1,
+     "trigger": null,
+     "notes": [
+      "HTF bull (K 70/D 69), LTF reversal age 1"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "MSTR-SWAP-USDT",
+   "price": 112.46,
+   "direction": "NEUTRAL",
+   "score": 39,
+   "notify": false,
+   "score_long": 35,
+   "score_short": 39,
+   "brick_size": 0.12178571428571416,
+   "bricks": 778,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 7,
+     "short": 13,
+     "max": 20,
+     "run": 4,
+     "consistency": 0.5,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 15,
+     "short": 11,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.468,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 3,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 82/D 87), LTF reversal age 3"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "SOXS-SWAP-USDT",
+   "price": 50.48,
+   "direction": "LONG",
+   "score": 50,
+   "notify": false,
+   "score_long": 50,
+   "score_short": 33,
+   "brick_size": 0.0957142857142852,
+   "bricks": 1173,
+   "entry": 50.72857142857122,
+   "stop": 50.244285714285716,
+   "t1": 51.21285714285673,
+   "t2": 51.69714285714223,
+   "rr": 1.0,
+   "stretch_target": 51.80535714285695,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 16,
+     "short": 0,
+     "max": 30,
+     "phase": "C",
+     "notes": [
+      "range 50.92-51.3986 (5.0 bricks, 3L/2H touches)",
+      "spring depth 7.0 brick, vol 0.64x avg, re-entry 0 bricks, test pending"
+     ]
+    },
+    "B_renko": {
+     "long": 12,
+     "short": 6,
+     "max": 20,
+     "run": 4,
+     "consistency": 0.4,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 9,
+     "short": 19,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.27,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 8,
+     "max": 25,
+     "htf": "bull",
+     "reversal_age": 4,
+     "trigger": null,
+     "notes": [
+      "HTF bull (K 20/D 14), LTF reversal age 4"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "HYPE-SWAP-USDT",
+   "price": 72.943,
+   "direction": "SHORT",
+   "score": 54,
+   "notify": false,
+   "score_long": 36,
+   "score_short": 54,
+   "brick_size": 0.05282142857142854,
+   "bricks": 1552,
+   "entry": 72.86099999999999,
+   "stop": 72.952,
+   "t1": 72.76999999999998,
+   "t2": 72.67899999999997,
+   "rr": 1.0,
+   "stretch_target": 72.48948750000015,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 17,
+     "max": 30,
+     "phase": "C",
+     "notes": [
+      "range 72.6295-72.7879 (3.0 bricks, 2L/2H touches)",
+      "utad depth 4.6 brick, vol 0.89x avg, re-entry 2 bricks, test valid"
+     ]
+    },
+    "B_renko": {
+     "long": 6,
+     "short": 3,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.3,
+     "speed": 0.667
+    },
+    "C_tape": {
+     "long": 16,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.54,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 14,
+     "short": 25,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 4,
+     "trigger": "SHORT Tr-1BL: sell-stop 72.861, stop 72.952 (1R 72.77)",
+     "notes": [
+      "HTF bear (K 64/D 66), LTF reversal age 4"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "XTI-SWAP-USDT",
+   "price": 87.57,
+   "direction": "NEUTRAL",
+   "score": 28,
+   "notify": false,
+   "score_long": 26,
+   "score_short": 28,
+   "brick_size": 0.02107142857142717,
+   "bricks": 2292,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 4,
+     "short": 7,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.5,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 14,
+     "short": 8,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.513,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 13,
+     "max": 25,
+     "htf": "bull",
+     "reversal_age": 3,
+     "trigger": null,
+     "notes": [
+      "HTF bull (K 75/D 74), LTF reversal age 3"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "KORU-SWAP-USDT",
+   "price": 7.71,
+   "direction": "LONG",
+   "score": 35,
+   "notify": false,
+   "score_long": 35,
+   "score_short": 27,
+   "brick_size": 0.01571428571428573,
+   "bricks": 982,
+   "entry": 7.700000000000003,
+   "stop": 7.654285714285714,
+   "t1": 7.745714285714292,
+   "t2": 7.791428571428581,
+   "rr": 1.0,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 10,
+     "short": 9,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.8,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 17,
+     "short": 5,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.627,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 13,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 4,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 88/D 90), LTF reversal age 4"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "SPY-SWAP-USDT",
+   "price": 755.31,
+   "direction": "SHORT",
+   "score": 38,
+   "notify": false,
+   "score_long": 26,
+   "score_short": 38,
+   "brick_size": 0.14821428571427678,
+   "bricks": 897,
+   "entry": 755.1517857142398,
+   "stop": 755.9282142857143,
+   "t1": 754.3753571427654,
+   "t2": 753.598928571291,
+   "rr": 1.0,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 3,
+     "short": 14,
+     "max": 20,
+     "run": 5,
+     "consistency": 0.5,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 15,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.645,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 1,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 81/D 88), LTF reversal age 1"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "INTC-SWAP-USDT",
+   "price": 59.86,
+   "direction": "SHORT",
+   "score": 44,
+   "notify": false,
+   "score_long": 31,
+   "score_short": 44,
+   "brick_size": 0.05107142857142831,
+   "bricks": 1029,
+   "entry": 59.85571428571403,
+   "stop": 59.981071428571425,
+   "t1": 59.73035714285663,
+   "t2": 59.60499999999924,
+   "rr": 1.0,
+   "stretch_target": 59.25051785714263,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 14,
+     "max": 30,
+     "phase": "C",
+     "notes": [
+      "range 59.3961-59.5493 (3.0 bricks, 5L/4H touches)",
+      "utad depth 8.4 brick, vol 0.70x avg, re-entry 0 bricks, test pending"
+     ]
+    },
+    "B_renko": {
+     "long": 5,
+     "short": 8,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.7,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 18,
+     "short": 7,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.672,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 1,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 87/D 90), LTF reversal age 1"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "AVAX-SWAP-USDT",
+   "price": 8.391,
+   "direction": "LONG",
+   "score": 31,
+   "notify": false,
+   "score_long": 31,
+   "score_short": 19,
+   "brick_size": 0.004500000000000107,
+   "bricks": 1938,
+   "entry": 8.388000000000204,
+   "stop": 8.3745,
+   "t1": 8.401500000000409,
+   "t2": 8.415000000000614,
+   "rr": 1.0,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 7,
+     "short": 4,
+     "max": 20,
+     "run": 1,
+     "consistency": 0.5,
+     "speed": 0.667
+    },
+    "C_tape": {
+     "long": 16,
+     "short": 7,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.363,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 8,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": null,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 64/D 74), LTF reversal age None"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "MU-SWAP-USDT",
+   "price": 781.5,
+   "direction": "SHORT",
+   "score": 43,
+   "notify": false,
+   "score_long": 35,
+   "score_short": 43,
+   "brick_size": 0.7857142857142898,
+   "bricks": 951,
+   "entry": 780.2142857142892,
+   "stop": 784.0657142857143,
+   "t1": 776.3628571428641,
+   "t2": 772.511428571439,
+   "rr": 1.0,
+   "stretch_target": 768.5464285714313,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 11,
+     "max": 30,
+     "phase": "C",
+     "notes": [
+      "range 770.786-773.143 (3.0 bricks, 5L/5H touches)",
+      "utad depth 13.6 brick, vol 4.19x avg, re-entry 0 bricks, test pending"
+     ]
+    },
+    "B_renko": {
+     "long": 6,
+     "short": 12,
+     "max": 20,
+     "run": 4,
+     "consistency": 0.4,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 21,
+     "short": 5,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.775,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 15,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 1,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 88/D 90), LTF reversal age 1"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "AAVE-SWAP-USDT",
+   "price": 112.82,
+   "direction": "NEUTRAL",
+   "score": 36,
+   "notify": false,
+   "score_long": 36,
+   "score_short": 31,
+   "brick_size": 0.07857142857142867,
+   "bricks": 1499,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 7,
+     "short": 9,
+     "max": 20,
+     "run": 2,
+     "consistency": 0.5,
+     "speed": 0.667
+    },
+    "C_tape": {
+     "long": 16,
+     "short": 9,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.398,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 13,
+     "short": 13,
+     "max": 25,
+     "htf": "bear",
+     "reversal_age": 3,
+     "trigger": null,
+     "notes": [
+      "HTF bear (K 81/D 89), LTF reversal age 3"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "SKHYNIX-SWAP-USDT",
+   "price": 900.28,
+   "direction": "NEUTRAL",
+   "score": 26,
+   "notify": false,
+   "score_long": 21,
+   "score_short": 26,
+   "brick_size": 0.2178571428571599,
+   "bricks": 2472,
+   "entry": null,
+   "stop": null,
+   "t1": null,
+   "t2": null,
+   "rr": null,
+   "stretch_target": null,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 0,
+     "max": 30,
+     "phase": "?",
+     "notes": [
+      "no trading range \u2014 no wyckoff edge"
+     ]
+    },
+    "B_renko": {
+     "long": 6,
+     "short": 12,
+     "max": 20,
+     "run": 4,
+     "consistency": 0.4,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 11,
+     "short": 10,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.439,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 4,
+     "short": 4,
+     "max": 25,
+     "htf": "bull-OB",
+     "reversal_age": null,
+     "trigger": null,
+     "notes": [
+      "HTF bull-OB (K 97/D 96), LTF reversal age None"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  },
+  {
+   "symbol": "BARD-SWAP-USDT",
+   "price": 0.1402,
+   "direction": "SHORT",
+   "score": 45,
+   "notify": false,
+   "score_long": 22,
+   "score_short": 45,
+   "brick_size": 0.000653571428571427,
+   "bricks": 1270,
+   "entry": 0.1405178571428566,
+   "stop": 0.1428535714285714,
+   "t1": 0.1381821428571418,
+   "t2": 0.135846428571427,
+   "rr": 1.0,
+   "stretch_target": 0.13624785714285667,
+   "breakdown": {
+    "A_wyckoff": {
+     "long": 0,
+     "short": 16,
+     "max": 30,
+     "phase": "C",
+     "notes": [
+      "range 0.138557-0.141171 (4.0 bricks, 2L/3H touches)",
+      "utad depth 8.2 brick, vol 0.00x avg, re-entry 0 bricks, test pending"
+     ]
+    },
+    "B_renko": {
+     "long": 5,
+     "short": 11,
+     "max": 20,
+     "run": 2,
+     "consistency": 0.9,
+     "speed": 1.0
+    },
+    "C_tape": {
+     "long": 9,
+     "short": 10,
+     "max": 25,
+     "stand_aside": false,
+     "warn": null,
+     "adv_dec_share": 0.65,
+     "notes": []
+    },
+    "D_miner": {
+     "long": 8,
+     "short": 8,
+     "max": 25,
+     "htf": "bull",
+     "reversal_age": null,
+     "trigger": null,
+     "notes": [
+      "HTF bull (K 53/D 45), LTF reversal age None"
+     ]
+    }
+   },
+   "ts": 1794603180000
+  }
+ ]
+}
