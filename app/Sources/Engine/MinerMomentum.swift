@@ -129,11 +129,12 @@ enum MinerMomentum {
 
     static func pointsFor(_ result: Result, side: TradeDirection) -> Int {
         let suffix = side == .long ? "long" : "short"
-        return (result.points["htf"] ?? 0)
-            + (result.points["ltf_reversal_\(suffix)"] ?? 0)
-            + (result.points["trigger_\(suffix)"] ?? 0)
-            + (result.points["stop_\(suffix)"] ?? 0)
-            + (result.points["rr_\(suffix)"] ?? 0)
-            + (result.points["plan"] ?? 0)
+        var total = result.points["htf"] ?? 0
+        total += result.points["ltf_reversal_\(suffix)"] ?? 0
+        total += result.points["trigger_\(suffix)"] ?? 0
+        total += result.points["stop_\(suffix)"] ?? 0
+        total += result.points["rr_\(suffix)"] ?? 0
+        total += result.points["plan"] ?? 0
+        return total
     }
 }

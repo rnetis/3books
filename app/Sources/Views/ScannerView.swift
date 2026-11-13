@@ -111,7 +111,7 @@ struct SignalRow: View {
                    signal.direction == .neutral {
                     Text(warn).mono().foregroundColor(TerminalTheme.dim)
                 } else {
-                    Text("A\(signal.breakdown.first(where: { $0.key == "A_wyckoff" })?.long ?? 0)·B\(signal.breakdown.first(where: { $0.key == "B_renko" })?.long ?? 0)·C\(signal.breakdown.first(where: { $0.key == "C_tape" })?.long ?? 0)·D\(signal.breakdown.first(where: { $0.key == "D_miner" })?.long ?? 0)")
+                    Text(factorText)
                         .mono()
                         .foregroundColor(TerminalTheme.dim)
                 }
@@ -127,5 +127,12 @@ struct SignalRow: View {
             }
         }
         .padding(.vertical, 2)
+    }
+
+    private var factorText: String {
+        func points(_ key: String) -> Int {
+            signal.breakdown.first { $0.key == key }?.long ?? 0
+        }
+        return "A\(points("A_wyckoff"))·B\(points("B_renko"))·C\(points("C_tape"))·D\(points("D_miner"))"
     }
 }
