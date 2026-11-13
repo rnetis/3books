@@ -8,7 +8,7 @@ Developer account, no secrets in CI). You install it by sideloading.
 1. Create a GitHub repo and push this project (Actions works on free accounts for both
    public and private repos).
 2. Actions tab → **Build Unsigned IPA** → runs on push, or **Run workflow** manually.
-3. When the run finishes (≈ 8–12 min on `macos-14`), open its summary page and download
+3. When the run finishes (≈ 8–12 min on `macos-15`), open its summary page and download
    **RenkoTrader-unsigned-ipa** — unzip it to get `RenkoTrader.ipa`.
 
 ## 2 · Install it (pick one)

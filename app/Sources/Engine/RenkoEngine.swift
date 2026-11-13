@@ -75,7 +75,7 @@ enum RenkoEngine {
                     emitted += 1
                 }
             }
-            if let tail = bricks.last {                  // attribute the candle once
+            if !bricks.isEmpty {                         // attribute the candle once
                 bricks[bricks.count - 1].volume += cd.v
                 bricks[bricks.count - 1].candles += 1
                 bricks[bricks.count - 1].tClose = cd.t

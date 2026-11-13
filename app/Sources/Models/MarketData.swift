@@ -37,7 +37,7 @@ struct Brick: Identifiable, Equatable {
     let open: Double
     let close: Double
     let tOpen: Int
-    let tClose: Int
+    var tClose: Int
     var volume: Double = 0
     var candles: Int = 0
     var low: Double = 0

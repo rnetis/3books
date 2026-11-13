@@ -41,9 +41,9 @@ enum WyckoffAnalyzer {
         -> (level: Double, touches: Int, lastIdx: Int)? {
         var best: (Double, Int, Int)?
         for (i, v) in vals.enumerated() {
-            let near = vals.enumerated().filter { abs($1.element - v) <= tol }
+            let near = vals.indices.filter { abs(vals[$0] - v) <= tol }
             if near.count < 2 { continue }
-            let cand = (v, near.count, near.map(\.offset).max() ?? i)
+            let cand = (v, near.count, near.max() ?? i)
             if best == nil || cand.1 > best!.1 || (cand.1 == best!.1 && cand.2 > best!.2) {
                 best = cand
             }
