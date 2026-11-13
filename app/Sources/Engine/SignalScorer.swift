@@ -72,7 +72,7 @@ enum SignalScorer {
             stretch = direction == .long ? rng.resistance + proj : rng.support - proj
         }
 
-        var breakdown: [FactorBreakdown] = [
+        let breakdown: [FactorBreakdown] = [
             FactorBreakdown(key: "A_wyckoff", title: "Wyckoff structure",
                             book: "The Wyckoff Methodology in Depth",
                             max: 30, long: aLong, short: aShort,

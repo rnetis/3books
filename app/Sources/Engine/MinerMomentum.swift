@@ -120,10 +120,10 @@ enum MinerMomentum {
             }
         }
         if out.trigger != nil { out.points["plan"] = 1 }
+        let ageText = out.ltfReversalAge.map(String.init) ?? "none"
         out.notes.append(String(
             format: "HTF %@ (K %.0f/D %.0f), LTF reversal age %@",
-            out.htfState, k, dd,
-            out.ltfReversalAge.map(String.init) ?? "none"))
+            out.htfState, k, dd, ageText))
         return out
     }
 
