@@ -39,7 +39,7 @@ final class ScannerService: ObservableObject {
 
     private func persistSettings() {
         if let data = try? JSONEncoder().encode(settings) {
-            UserDefaults.standard.set(data, forKey: settingsKey)
+            UserDefaults.standard.set(data, forKey: Self.settingsKey)
         }
     }
 
@@ -113,12 +113,12 @@ final class ScannerService: ObservableObject {
 
     private func scanSymbol(_ symbol: String) async -> ScanSignal? {
         do {
-            async let k1 = client.klines(symbol: symbol, interval: "1m", limit: 1000)
-            async let k15 = client.klines(symbol: symbol, interval: "15m", limit: 200)
+            async let k1Request = client.klines(symbol: symbol, interval: "1m", limit: 1000)
+            async let k15Request = client.klines(symbol: symbol, interval: "15m", limit: 200)
             let base = symbol.replacingOccurrences(of: "-SWAP-USDT", with: "USDT")
             let tick = tickSizes[base] ?? 1e-6
-            let k1 = SignalScorer.dropPartial(try await k1, intervalMS: 60_000)
-            let k15 = SignalScorer.dropPartial(try await k15, intervalMS: 900_000)
+            let k1 = SignalScorer.dropPartial(try await k1Request, intervalMS: 60_000)
+            let k15 = SignalScorer.dropPartial(try await k15Request, intervalMS: 900_000)
             return SignalScorer.scan(symbol: symbol, k1m: k1, k15m: k15,
                                      tick: tick, settings: settings)
         } catch {
@@ -133,7 +133,7 @@ final class ScannerService: ObservableObject {
             let symbols: [Symbol]
         }
         do {
-            var components = URLComponents(url: ToobitClient.base
+            let components = URLComponents(url: ToobitClient.base
                 .appendingPathComponent("api/v1/exchangeInfo"),
                 resolvingAgainstBaseURL: false)!
             let (data, _) = try await URLSession.shared.data(from: components.url!)
