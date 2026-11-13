@@ -589,16 +589,15 @@ def miner_factor(ltf: Sequence[Candle], htf: Sequence[Candle],
     k, dd = sk_h[-1], d_h[-1]
     ob_h = k >= 75 and dd >= 75
     os_h = k <= 25 and dd <= 25
+    # Direction gate: only the side matching the 15m trend earns HTF points.
     if k > dd and not ob_h:
-        out.htf_state, out.points["htf"] = "bull", 8
+        out.htf_state, out.points["htf_long"] = "bull", 8
     elif k > dd and ob_h:
-        out.htf_state, out.points["htf"] = "bull-OB", 4
-    elif os_h:
-        out.htf_state, out.points["htf"] = "OS", 3
+        out.htf_state, out.points["htf_long"] = "bull-OB", 4
     elif k < dd and not os_h:
-        out.htf_state, out.points["htf"] = "bear", 8
+        out.htf_state, out.points["htf_short"] = "bear", 8
     elif k < dd and os_h:
-        out.htf_state, out.points["htf"] = "bear-OS", 4
+        out.htf_state, out.points["htf_short"] = "bear-OS", 4
     else:
         out.htf_state = "flat"
 
@@ -654,10 +653,10 @@ def miner_factor(ltf: Sequence[Candle], htf: Sequence[Candle],
 
 def miner_points_for(m: Miner, side: str) -> int:
     if side == "long":
-        return (m.points.get("htf", 0) + m.points.get("ltf_reversal_long", 0)
+        return (m.points.get("htf_long", 0) + m.points.get("ltf_reversal_long", 0)
                 + m.points.get("trigger_long", 0) + m.points.get("stop_long", 0)
                 + m.points.get("rr_long", 0) + m.points.get("plan", 0))
-    return (m.points.get("htf", 0) + m.points.get("ltf_reversal_short", 0)
+    return (m.points.get("htf_short", 0) + m.points.get("ltf_reversal_short", 0)
             + m.points.get("trigger_short", 0) + m.points.get("stop_short", 0)
             + m.points.get("rr_short", 0) + m.points.get("plan", 0))
 

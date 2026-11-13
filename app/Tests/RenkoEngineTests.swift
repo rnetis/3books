@@ -116,6 +116,18 @@ final class RenkoEngineTests: XCTestCase {
         XCTAssertEqual(signal!.breakdown.count, 4)
     }
 
+    func testMinerHTFPointsOnlyForMatchingDirection() {
+        var bull = MinerMomentum.Result()
+        bull.points["htf_long"] = 8
+        XCTAssertEqual(MinerMomentum.pointsFor(bull, side: .long), 8)
+        XCTAssertEqual(MinerMomentum.pointsFor(bull, side: .short), 0)
+
+        var bear = MinerMomentum.Result()
+        bear.points["htf_short"] = 4
+        XCTAssertEqual(MinerMomentum.pointsFor(bear, side: .long), 0)
+        XCTAssertEqual(MinerMomentum.pointsFor(bear, side: .short), 4)
+    }
+
     func testTapeStandAsideOnLifelessMarket() {
         let t0 = 1_700_000_000_000
         var rows: [(Int, Double, Double, Double, Double, Double)] = []

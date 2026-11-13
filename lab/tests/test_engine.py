@@ -8,9 +8,10 @@ import os
 import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from engine import (Brick, Candle, build_bricks, brick_size, consistency,  # noqa: E402
-                    miner_factor, pivots, renko_factor, run_head, scan_symbol,
-                    stochastic, tape_factor, wyckoff_factor)
+from engine import (Brick, Candle, Miner, build_bricks, brick_size,  # noqa: E402
+                    consistency, miner_factor, miner_points_for, pivots,
+                    renko_factor, run_head, scan_symbol, stochastic,
+                    tape_factor, wyckoff_factor)
 
 
 def mk(candles: list[tuple[int, float, float, float, float, float]]) -> list[Candle]:
@@ -257,6 +258,16 @@ def test_miner_factor_runs_on_synthetic():
 
 def miner_points(m) -> int:
     return m.total()
+
+
+def test_miner_htf_points_only_for_matching_direction():
+    bull = Miner(points={"htf_long": 8})
+    assert miner_points_for(bull, "long") == 8
+    assert miner_points_for(bull, "short") == 0
+
+    bear = Miner(points={"htf_short": 4})
+    assert miner_points_for(bear, "long") == 0
+    assert miner_points_for(bear, "short") == 4
 
 
 # --------------------------------------------------------------------------- #

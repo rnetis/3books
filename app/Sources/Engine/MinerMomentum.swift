@@ -46,16 +46,15 @@ enum MinerMomentum {
         let dd = dH.last!
         let obH = k >= 75 && dd >= 75
         let osH = k <= 25 && dd <= 25
+        // Direction gate: only the side matching the 15m trend earns HTF points.
         if k > dd, !obH {
-            out.htfState = "bull"; out.points["htf"] = 8
+            out.htfState = "bull"; out.points["htf_long"] = 8
         } else if k > dd, obH {
-            out.htfState = "bull-OB"; out.points["htf"] = 4
-        } else if osH {
-            out.htfState = "OS"; out.points["htf"] = 3
+            out.htfState = "bull-OB"; out.points["htf_long"] = 4
         } else if k < dd, !osH {
-            out.htfState = "bear"; out.points["htf"] = 8
+            out.htfState = "bear"; out.points["htf_short"] = 8
         } else if k < dd, osH {
-            out.htfState = "bear-OS"; out.points["htf"] = 4
+            out.htfState = "bear-OS"; out.points["htf_short"] = 4
         } else {
             out.htfState = "flat"
         }
@@ -129,7 +128,7 @@ enum MinerMomentum {
 
     static func pointsFor(_ result: Result, side: TradeDirection) -> Int {
         let suffix = side == .long ? "long" : "short"
-        var total = result.points["htf"] ?? 0
+        var total = result.points["htf_\(suffix)"] ?? 0
         total += result.points["ltf_reversal_\(suffix)"] ?? 0
         total += result.points["trigger_\(suffix)"] ?? 0
         total += result.points["stop_\(suffix)"] ?? 0
